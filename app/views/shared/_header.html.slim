@@ -1,0 +1,16 @@
+header
+  .container
+    .d-flex.flex-wrap.justify-content-center.py-3
+      a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-dark.text-decoration-none(href='/')
+        .logodiv
+          = image_tag('AMonkey-p-500.png', alt: 'logo', class:'logo')
+          use(xlink:href='#bootstrap')
+        span.text-white.fs-4 HABIT MONKEY
+
+        ul.nav.nav-pills
+          li.nav-item
+            a.nav-link(href='#') HOME
+          li.nav-item
+            a.nav-link(href='#') SHARE
+          li.nav-item
+            a.nav-link(href='#') PLAY

@@ -1,0 +1,133 @@
+head
+   script src="https://cdn.jsdelivr.net/npm/skrollr"
+body data-400="bottom:80%;" data-1000="display:block" data-1200="bottom:0%"
+    div(data-controller='home')
+      #mainImage
+        .imagediv
+          = image_tag "Hero.gif", alt: "background", class: 'imgfirst'
+        .textdiv
+          h1.stop
+            | Stop Tracking,
+            br
+            | Start Learning!
+          p.thefirst
+          The first interactive learning app about Nutirition, Dieting, Fitness & Mindfulness
+          .buttondiv
+            button.down.app
+            button.down.google
+
+
+
+
+
+      .section.new-section 
+        .div-container data-300="opacity:1;" data-400="opacity:1.5;" data-500="opacity:0;"
+          .text-box
+            h1.boxtitle
+              | Master your habit!
+            p.boxcontain
+              | The first educational app about
+              br
+              | nutrition, fitness & mindfulness with
+              br
+              | dozens of modules & lessons,
+              br
+              | interactive quizzes, explainer videos
+              br
+              | and games.
+          .image-box style="background-image:url('mobile1.png')"
+            = image_tag "mobile1.png", alt: "mobile1", class: "mobile"
+        .div-container data-600="opacity:0;" data-700="opacity:1.5;" data-800="opacity:0;"
+          .text-box
+            h1.boxtitle
+              | Build your intuition
+            p.boxcontain
+              | Stop being afraid of what you eat
+              br
+              | and build your nutritional intuition
+              br
+              | with Habit Monkey. Our app will help
+              br
+              | you understand food for what it is...
+              br
+              | just food!
+          .image-box style="background-image:url('mobile2.png')"
+            = image_tag "mobile2.png", alt: "mobile2", class: "mobile"
+        .div-container data-900="opacity:0;" data-1000="opacity:1.5;" data-1100="opacity:0;"
+          .text-box
+            h1.boxtitle
+              | Think like a Pro!
+            p.boxcontain
+              | With our interactive lessons, you will
+              br
+              | will learn to understand what you eat,
+              br
+              | when to eat, why we eat. As a nice
+              br
+              | side effect, you'll be able to naturally
+              br
+              | create your own diet, one which fits
+              br
+              | your lifestyle, and one which lets you
+              br
+              | regain control of your own health.
+          .image-box style="background-image:url('mobile3.png')"
+            = image_tag "mobile3.png", alt: "mobile3", class: "mobile"
+        .div-container data-1200="opacity:0;" data-1300="opacity:1.5;" data-1400="opacity:0;"
+          .text-box
+            h1.boxtitle
+              | Take control...
+            p.boxcontain
+              | With our 4-Stage method (Nutrition,
+              br
+              | Dieting, Fitness & Mindfulness) you'll
+              br
+              | learn about all aspects of nutrition
+              br
+              | and fitness. Its a first-of-its-kind
+              br
+              | curriculum, which aims to improve
+              br
+              | people's physical and mental health.
+          .image-box style="background-image:url('mobile4.png')"
+            = image_tag "mobile4.png", alt: "mobile4", class: "mobile"
+      #cover
+
+        
+
+
+
+
+
+      #education
+        h1.eduapp
+          | The first education app
+      #subscribe
+        .hdiv
+          h1.newsletter
+          | Subscribe to our newsletter
+        .pdiv
+          p.want
+          | Want to hear from us? Subscribe our newsletter now.
+        form(action="/submit" method="get" class='email')
+          input(type="email" id="email" name="email" placeholder="Enter your email address" class='mailinput')
+          input(type="submit" value="Subscribe" class='mailsubmit')
+        .bdiv
+          button.social.facebook
+          button.social.twitter
+          button.social.linkedin
+          button.social.email
+          button.social.whatsapp
+          a.w-inline-block.social-share-button.facebook href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_self" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'https://www.habitmonkey.app' + '&t=' + 'https://www.habitmonkey.app'); return false;"
+      .join
+        .joinbox
+          = image_tag "Tree-Asset.webp", alt: "Tree", class: 'tree'
+          = image_tag "Lifestyle.webp", alt: "Lifestyle", class: 'lifestyle'
+          p.movement JOIN THR MOVEMENT!
+          h1.letscontrol
+            | Lets take control of our health
+            br
+            | and live a longer and better life
+          .buttondiv
+            button.down.app
+            button.down.google
